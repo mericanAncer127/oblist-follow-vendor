@@ -6,7 +6,6 @@ const accessToken = process.env.SHOPIFY_ACCESS_TOKEN;
 
 const triggerProfile = async (email, data) => {
   try {
-    console.log(data);
     if (data?.status === "active") {
       const options = {
         method: "POST",

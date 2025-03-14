@@ -5,6 +5,7 @@ const apiKey = process.env.API_KEY || "";
 const accessToken = process.env.SHOPIFY_ACCESS_TOKEN;
 
 const triggerProfile = async (email, data) => {
+  console.log(data);
   try {
     if (data?.status === "active") {
       const options = {

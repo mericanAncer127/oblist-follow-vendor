@@ -13,7 +13,7 @@ const triggerProfile = async (email, data) => {
         url: "https://a.klaviyo.com/api/events/",
         headers: {
           accept: "application/json",
-          revision: "2025-01-15",
+          revision: "2024-05-15",
           "content-type": "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
         },

@@ -6,13 +6,14 @@ const accessToken = process.env.SHOPIFY_ACCESS_TOKEN;
 
 const triggerProfile = async (email, data) => {
   try {
+    console.log(data);
     if (data?.status === "active") {
       const options = {
         method: "POST",
         url: "https://a.klaviyo.com/api/events/",
         headers: {
           accept: "application/json",
-          revision: "2024-05-15",
+          revision: "2025-01-15",
           "content-type": "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
         },
